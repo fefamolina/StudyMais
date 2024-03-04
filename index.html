@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+/>
+    <link rel="shortcut icon" href="assets/img/MicrosoftTeams-image-removebg-preview.png">
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Study+</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navigation">
+        <a href="#" class="logo"><img src="assets/img/MicrosoftTeams-image-removebg-preview.png">S<span>tudy</span>+</span></a>
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="#">Inicio</a></li>
+          <li class="nav-item"><a href="#about">Sobre</a></li>
+          <li class="nav-item"><a href="#contact">Contato</a></li>
+          <li class="nav-item"><a href="login.php" class="home-btn">Login</li></a>
+          <li class="nav-item"><a href="cadastro.php" class="home-btn">Cadastro</li></a>
+        </ul>
+        <div class="menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="home">
+        <div class="home-text">
+          <h4 class="text-h4">Bem vindo ao Study+</h4>
+          <h1 class="text-h1">A melhor plataforma de estudos online</h1>
+          <p>Seja você o transformador do seu futuro.</p>
+
+          <a href="cadastro.php" class="home-btn">Começar</a>
+        </div>
+        <div class="home-img">
+          <img src="assets/img/Bibliophile-unscreen.gif"/>
+        </div>
+      </section>
+    </main>
+
+    <main>
+      <section class="about" id="about">
+        <div class="aimg">
+          <img src="assets/img/Meeting-bro.svg">
+        </div>
+        <div class="home-text">
+          <h4 class="text">Sobre o Study+</h4>
+          <h3 class="txt2">Para a galera do Study+ você vem sempre em primeiro lugar, queremos que na nossa plataforma você se sinta em uma sala de aula. Aqui você pode upar apostilas sobre qualquer assunto, terá um fórum para trocar ideias com os professores e alunos, além de poder compartilhar links de vídeo aulas de outras plataformas, você também irá encontrar um sistema de quiz e ranking para disputar seus conhecimentos com outros alunos, além de diversas outras coisas.</h3>
+        </div>
+      </div>
+      </section>
+    </main>
+    <main>
+      <section class="contact" id="contact">
+        <div class="home-text">
+          <h4 class="txt3">Contato</h4>
+          <h1 class="text-h1">Precisa de ajuda?</h1>
+          <p>Entre em contato</p>
+          <div>
+            <a class="home-btn" href="#quote_modal">Contato</a>
+          </div>
+        
+          <div id="quote_modal" class="QuoteModal">
+            <div class="popup_modal">
+              <div>
+                <a href="#close" title="Close" class="fclose">X</a>
+                <h3 class="text-h1">Contato</h3>
+              </div>
+              <div>
+                <form role="form" class="text-center">
+                  <div class="input">
+                    <div class="inputxt">
+                        <label for="nome">Nome:</label>
+                        <input id="nome" type="text" name="nome" placeholder="Digite seu nome" required>
+                    </div>
+                    <div class="inputxt">
+                        <label for="email">E-mail:</label>
+                        <input id="email" type="email" name="email" placeholder="Digite seu e-mail" required>
+                    </div>
+    
+                    <div class="inputxt">
+                        <label for="texto">Mensagem:</label><br>
+                        <textarea name="texto" rows="7" cols="50" placeholder="Digite sua mensagem"></textarea>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div>
+                <button type="button" class="home-btn">Enviar</button>
+              </div>
+          </div>
+        </div>
+      </div>
+        <div class="home-img3">
+          <img src="assets/img/contact.svg">
+        </div>
+      </section>
+    </main>
+    <main>
+      <section class="footer">
+        <div class="footertxt">
+          <h4>Copyright @2022 | Designed With by <a href="#">Study+</a></h4>
+
+            <ul class="footersocial">
+            <li><a href="#"><i class='bx bxl-facebook-circle'></i></a></li>
+            <li><a href="#"><i class='bx bxl-twitter'></i></a></li>
+            <li><a href="#"><i class='bx bxl-instagram'></i></a></li>
+</ul>
+        </div>
+      </div>
+      </section>
+    <script>
+      const menu = document.querySelector(".menu");
+      const NavMenu = document.querySelector(".nav-menu");
+
+      menu.addEventListener("click", () => {
+        menu.classList.toggle("ativo");
+        NavMenu.classList.toggle("ativo");
+      });
+    </script>
+  </body>
+</html>
